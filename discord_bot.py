@@ -40,7 +40,7 @@ async def on_message(message):
 		
 		# Send a private message to the correct user.
 		elif userWithDiscriminator is not None:
-			await client.send_message(userWithDiscriminator, 'Hi {}! {} is online'.format(username, message.author.name))
+			await client.send_message(userWithDiscriminator, 'Hey {}! {} is online and wants to join up!'.format(username, message.author.name))
 	
 		# Handle the case of no user with the inputted name being on the server.
 		elif userWithDiscriminator is None or username == "poke-bot":
